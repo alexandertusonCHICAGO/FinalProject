@@ -1,0 +1,18 @@
+I want to build an electromagnetic particle simulator that models how 
+particles react to electromagnetic radiation. The program will take a few
+parameters, run calculations, and return the results. I can provide more
+details about the specifics of the calculations that I want to be able to run,
+its basically maxwells equations. I want it to have a couple different
+functionalities to solve a couple different types of problems.
+
+I think the project satisfies the complexity requirements, it involves fairly 
+complex numerical calculations. I plan to use algebraic data types to model 
+different components of the similation like the particles, atmospheric layers 
+and wave information. I will most likely use higher order functions because I
+think I want to see how a wave affects multiple particles and it would be useful
+to apply multiple functions to a set of objects. My program will most likely 
+involve repeated updates like computing how radiation affects each layer over 
+time, so I think I'll use state or monad transformers to handle those. I think 
+I'll probably have to input a lot of information because the problems will 
+require a lot of starting information, so I will probably use parser combinators
+to help read those inputs. 
