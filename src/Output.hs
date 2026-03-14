@@ -1,7 +1,6 @@
 module Output where
 
 import Types
-import Optimization
 
 -- | Format temperature in Kelvin.
 formatTemperature :: Temperature -> String
@@ -17,6 +16,11 @@ formatMass m =
 formatPower :: Double -> String
 formatPower p =
   show p ++ " W/m^2"
+
+-- | Warming efficiency metric.
+warmingEfficiency :: SimulationResult -> Double
+warmingEfficiency result =
+  temperatureValue (equilibriumTemperature result) / particleMass result
 
 -- | Format full simulation result.
 formatResult :: SimulationResult -> String

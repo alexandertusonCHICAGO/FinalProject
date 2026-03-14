@@ -29,8 +29,6 @@ executable FinalProject
         RadiativeTransfer
         EnergyBalance
         ParameterSweep
-        Optimization
-        Parser
         Output
 
     build-depends:
